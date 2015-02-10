@@ -1,0 +1,15 @@
+﻿{
+    "version": "1.0.0",
+    "name": "AngularMetroUI",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/natarajanmca11/AngularMetroUI.git"
+    },
+    "devDependencies": {
+        "bower": "^1.3.12",
+        "gulp": "^3.8.10",
+        "gulp-bower": "^0.0.7",
+        "angular": "^1.3.13",
+        "angular-ui-router": "^0.2.13"
+    }
+}
