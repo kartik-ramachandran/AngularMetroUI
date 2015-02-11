@@ -1,4 +1,4 @@
-﻿angular.module('ui.am.menu', [])
+﻿angular.module('ui.bootstrap.menu', [])
 
 .controller('MenuController', ['$scope', function MenuCtrl($scope) {
     var ctrl = this,
@@ -62,7 +62,7 @@
 
 .directive('menutab', ['$parse', function ($parse) {
     return {
-        require: '^tabset',
+        require: '^menu',
         restrict: 'EA',
         replace: true,
         templateUrl: 'template/menu/menutab.html',
@@ -131,7 +131,7 @@
         restrict: 'A',
         require: '^menu',
         link: function (scope, elm, attrs) {
-            var tab = scope.$eval(attrs.tabContentTransclude);
+            var tab = scope.$eval(attrs.menutabContentTransclude);
 
             //Now our tab is ready to be transcluded: both the tab heading area
             //and the tab content area are loaded.  Transclude 'em both.

@@ -1,22 +1,26 @@
 ﻿<!doctype html>
-<html ng-app="AngMetUi">
+<html ng-app="AngularMetroUIDoc">
 <head>
     <title>Angular Metro UI</title>
+    <!-- Load Vendor JavaScript Libraries -->
     <script src="lib/angular/angular.js"></script>
     <script src="lib/uirouter/angular-ui-router.js"></script>
-    <script src="../src/menu/menu.js"></script>
-    <link href="../css/metro-bootstrap-responsive.css" rel="stylesheet" />
+    <!-- Load Local JavaScript Libraries -->
+    <script src="lib/AngularMetroUI/components.js"></script>
+    <script src="template/template.js"></script>
+    <!-- Load CSs -->
     <link href="../css/metro-bootstrap.css" rel="stylesheet" />
+    <link href="../css/metro-bootstrap-responsive.css" rel="stylesheet" />
 </head>
-<body class="metro">
+<body>
     <div>
-        <div style="float: left; width: 100px;">
+        <div style="float: left; width: 10%;">
             <ui>
                 <li ui-sref="Menu">Menu</li>
                 <li ui-sref="Test">Test</li>
             </ui>
         </div>
-        <div style="float: left" ui-view></div>
+        <div class="metro" style="float: left;width:89%;" ui-view></div>
     </div>
     <script src="app.js"></script>
 </body>

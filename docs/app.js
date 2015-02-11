@@ -1,5 +1,5 @@
 ﻿
-angular.module('AngMetUi', ['ui.router', 'ui.am.menu'])
+angular.module('AngularMetroUIDoc', ['ui.router', 'ui.bootstrap'])
 .config(
   ['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
